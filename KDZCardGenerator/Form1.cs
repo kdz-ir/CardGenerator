@@ -83,7 +83,7 @@ namespace KDZCardGenerator
                 {
                     if (row.Cells[0].Value is null)
                         continue;
-                    var testDICK = new Dictionary<string, string>();
+                    var properteis = new Dictionary<string, string>();
 
                     for (int i = 0; i < _headers.Count; i++)
                     {
@@ -94,13 +94,13 @@ namespace KDZCardGenerator
                                 MessageBox.Show($"Row {row.Index + 1} need review.", "Check your images", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return;
                             }
-                            testDICK.Add(_headers[i], Path.Combine(_imagePath, row.Cells[ImageColCmb.SelectedIndex].Value.ToString()??""));
+                            properteis.Add(_headers[i], Path.Combine(_imagePath, row.Cells[ImageColCmb.SelectedIndex].Value.ToString()??""));
                             continue;
                         }
-                        testDICK.Add(_headers[i], row.Cells[i].Value.ToString() ?? "");
+                        properteis.Add(_headers[i], row.Cells[i].Value.ToString() ?? "");
                     }
 
-                    testobj.Add(testDICK);
+                    testobj.Add(properteis);
                 }
                 JsonSerializerOptions jso = new JsonSerializerOptions();
                 jso.Encoder = System.Text.Encodings.Web.JavaScriptEncoder.UnsafeRelaxedJsonEscaping;
