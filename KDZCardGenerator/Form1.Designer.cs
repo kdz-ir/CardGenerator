@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.OpenFileDialogbtn = new ReaLTaiizor.Controls.Button();
             this.Exceldgv = new System.Windows.Forms.DataGridView();
             this.SelectFolderbtn = new ReaLTaiizor.Controls.Button();
@@ -145,8 +146,10 @@
             this.Controls.Add(this.SelectFolderbtn);
             this.Controls.Add(this.Exceldgv);
             this.Controls.Add(this.OpenFileDialogbtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Generate";
             ((System.ComponentModel.ISupportInitialize)(this.Exceldgv)).EndInit();
             this.ResumeLayout(false);
 
