@@ -33,7 +33,7 @@ namespace KDZCardGenerator
                 var workbook = new XSSFWorkbook(fileStream);
                 var sheet = workbook.GetSheetAt(0);
                 _readHeaderTitle(sheet.GetRow(0));
-                for (var i = sheet.FirstRowNum + 1; i < sheet.LastRowNum; i++)
+                for (var i = sheet.FirstRowNum + 1; i <= sheet.LastRowNum; i++)
                 {
                     var row = sheet.GetRow(i);
                     if (row == null) continue;
