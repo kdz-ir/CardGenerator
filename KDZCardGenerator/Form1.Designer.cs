@@ -40,7 +40,7 @@
             // 
             // OpenFileDialogbtn
             // 
-            this.OpenFileDialogbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.OpenFileDialogbtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.OpenFileDialogbtn.BackColor = System.Drawing.Color.Transparent;
             this.OpenFileDialogbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.OpenFileDialogbtn.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
@@ -59,7 +59,9 @@
             // 
             // Exceldgv
             // 
-            this.Exceldgv.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Exceldgv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.Exceldgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Exceldgv.Location = new System.Drawing.Point(12, 165);
             this.Exceldgv.Name = "Exceldgv";
@@ -69,7 +71,6 @@
             // 
             // SelectFolderbtn
             // 
-            this.SelectFolderbtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.SelectFolderbtn.BackColor = System.Drawing.Color.Transparent;
             this.SelectFolderbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SelectFolderbtn.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
@@ -88,7 +89,7 @@
             // 
             // SelectReportFileBtn
             // 
-            this.SelectReportFileBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.SelectReportFileBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.SelectReportFileBtn.BackColor = System.Drawing.Color.Transparent;
             this.SelectReportFileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.SelectReportFileBtn.EnteredColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
@@ -96,7 +97,7 @@
             this.SelectReportFileBtn.Image = null;
             this.SelectReportFileBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SelectReportFileBtn.InactiveColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(34)))), ((int)(((byte)(37)))));
-            this.SelectReportFileBtn.Location = new System.Drawing.Point(581, 10);
+            this.SelectReportFileBtn.Location = new System.Drawing.Point(581, 12);
             this.SelectReportFileBtn.Name = "SelectReportFileBtn";
             this.SelectReportFileBtn.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
             this.SelectReportFileBtn.Size = new System.Drawing.Size(120, 40);
